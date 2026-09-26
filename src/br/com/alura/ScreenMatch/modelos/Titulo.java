@@ -1,18 +1,17 @@
 package br.com.alura.ScreenMatch.modelos;
 
+import br.com.alura.ScreenMatch.excessoes.ErroDeConversaoDeAnoException;
 import com.google.gson.annotations.SerializedName;
 
 public class Titulo implements Comparable<Titulo>{
 
     // Atributos Da Classe
-    @SerializedName("Title")
     private String nome;
     private String descricao;
     private int totalDeAvaliacao;
     private double somaDasAvaliacao;
     private int duracaoEmMinutos;
     private boolean incluidoNoPlano;
-    @SerializedName("Year")
     private int anoDeLancamento;
 
     // Construtor
@@ -23,6 +22,10 @@ public class Titulo implements Comparable<Titulo>{
 
     public Titulo(TituloOMDB meuTituloOMDB) {
         this.nome = meuTituloOMDB.title();
+
+        if(meuTituloOMDB.year().length() >4) {
+            throw new ErroDeConversaoDeAnoException("Não foi possível converter o Ano de Lançamento");
+        }
         this.anoDeLancamento = Integer.valueOf(meuTituloOMDB.year());
         this.duracaoEmMinutos = Integer.valueOf(meuTituloOMDB.runtime().substring(0, 2));
     }
