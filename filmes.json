@@ -1,0 +1,34 @@
+[
+  {
+    "Nome": "Venom",
+    "TotalDeAvaliacao": 0,
+    "SomaDasAvaliacao": 0.0,
+    "DuracaoEmMinutos": 11,
+    "IncluidoNoPlano": false,
+    "AnoDeLancamento": 2018
+  },
+  {
+    "Nome": "Superman",
+    "TotalDeAvaliacao": 0,
+    "SomaDasAvaliacao": 0.0,
+    "DuracaoEmMinutos": 12,
+    "IncluidoNoPlano": false,
+    "AnoDeLancamento": 2025
+  },
+  {
+    "Nome": "Dogville",
+    "TotalDeAvaliacao": 0,
+    "SomaDasAvaliacao": 0.0,
+    "DuracaoEmMinutos": 17,
+    "IncluidoNoPlano": false,
+    "AnoDeLancamento": 2003
+  },
+  {
+    "Nome": "Matrix",
+    "TotalDeAvaliacao": 0,
+    "SomaDasAvaliacao": 0.0,
+    "DuracaoEmMinutos": 60,
+    "IncluidoNoPlano": false,
+    "AnoDeLancamento": 1993
+  }
+]
